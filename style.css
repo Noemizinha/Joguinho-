@@ -1,0 +1,89 @@
+body{
+margin:0;
+background:#120018;
+color:white;
+font-family:Arial;
+text-align:center;
+}
+
+#portal-screen{
+padding-top:50px;
+}
+
+#portal{
+width:180px;
+height:280px;
+margin:30px auto;
+border:12px solid #2e243b;
+background:linear-gradient(180deg,#ffb6ff,#ff69d4);
+cursor:pointer;
+animation:pulsar 1.5s infinite;
+}
+
+@keyframes pulsar{
+0%{box-shadow:0 0 10px pink;}
+50%{box-shadow:0 0 40px hotpink;}
+100%{box-shadow:0 0 10px pink;}
+}
+
+#game-screen{
+display:none;
+}
+
+#mapa{
+position:relative;
+width:100%;
+height:500px;
+background:#87CEEB;
+overflow:hidden;
+}
+
+#chao{
+position:absolute;
+bottom:0;
+left:0;
+width:100%;
+height:120px;
+background:#4CAF50;
+}
+
+#bibi{
+position:absolute;
+bottom:0px;
+left:10px;
+
+width:190px;
+height:190px;
+
+background-image:url("img/bibi.png");
+background-size:100% 100%;
+background-repeat:no-repeat;
+background-position:center;
+
+z-index:10;
+}
+
+#controles{
+margin-top:20px;
+}
+
+#controles button{
+font-size:30px;
+padding:15px 25px;
+margin:10px;
+border:none;
+border-radius:15px;
+cursor:pointer;
+}
+.andando{
+animation:andar 0.25s infinite alternate;
+}
+
+@keyframes andar{
+from{
+margin-bottom:0px;
+}
+to{
+margin-bottom:8px;
+}
+}
